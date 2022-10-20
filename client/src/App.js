@@ -1,10 +1,12 @@
-
+import Header from "./componants/Header";
+import Footer from "./componants/Footer";
 const  App = () => {
   return (
     <div>
-      <h1>
-        Clothing Store!
-      </h1>
+      <Header />
+        {/* Clothing Store! */}
+        <div style={{height:'500px'}}></div>
+      <Footer />
     </div>
   );
 }
