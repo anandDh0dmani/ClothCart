@@ -1,6 +1,7 @@
 import { Flex, Box, Heading, Icon, Link } from "@chakra-ui/react";
 import { useState } from "react";
 import { HiShoppingBag, HiOutlineMenuAlt3, HiUser } from "react-icons/hi";
+import { Link as RouterLink } from "react-router-dom";
 // import { HiOutlineMenuAlt3, HiShoppingBag, HiUser } from "react-icons/hi";
 
 const Header = () => {
@@ -25,8 +26,9 @@ const Header = () => {
                 fontWeight='bold'
                 size='md'
                 letterSpacing='md'>
-                    <Link 
-                        href="/"
+                    <Link
+						as={RouterLink}
+                        to="/"
                         _hover={{ color:'gray.500', textDecoration: 'bold'}}
                         >
                         ClothCart!
@@ -45,7 +47,8 @@ const Header = () => {
                 lineHeight={{base: '2', md:'2'}}
                 alignItems='center'>
                 <Link
-                    href="/cart"
+					as={RouterLink}
+					to="/cart"
                     fontSize='sm'
                     letterSpacing='wide'
                     color='whiteAlpha.600'
@@ -59,7 +62,8 @@ const Header = () => {
                     Cart                    
                 </Link>   
                 <Link
-                    href="/login"
+					as={RouterLink}
+                    to="/login"
                     fontsize='sm'
                     letterSpacing='wide'
                     color='whiteAlpha.600'
