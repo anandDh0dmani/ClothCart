@@ -1,2 +1,0 @@
-# ClothCart
-Online Clothing Store 
