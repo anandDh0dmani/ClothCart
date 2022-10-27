@@ -25,7 +25,7 @@ const HomeScreen = () => {
                 Latest Products
             </Heading>
 
-            <Grid templateColumns='1fr 1fr 1fr 1fr' gap='8'>
+            <Grid templateColumns='1fr 1fr 1fr' gap='8'>
                 {products.map((product) => (
                     <ProductCard product={product} />
                 ))}

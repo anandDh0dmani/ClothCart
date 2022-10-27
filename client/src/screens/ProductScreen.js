@@ -1,7 +1,7 @@
 import { Flex, Button, Heading, Grid, Image, Text } from "@chakra-ui/react";
-import { Link as RouterLink, useParams } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from "react";
+import { Link as RouterLink, useParams } from 'react-router-dom';
 
 import Rating from '../componants/Rating';
 
@@ -12,12 +12,11 @@ const ProductScreen = () => {
 	useEffect(() => {
 		const fetchProduct = async () => {
 			const { data } = await axios.get(`/api/products/${id}`);
-			
 			setProduct(data);
 		}
 
 		fetchProduct();
-	},[id]);
+	}, [id]);
 
     return (
         <>
