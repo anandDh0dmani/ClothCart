@@ -56,7 +56,7 @@ const Header = () => {
                     textTransform='uppercase'
                     mr='5'
                     display='flex'
-                    alignItem='center'
+                    alignItems='center'
                     _hover={{color:'whiteAlpha.900'}}>
                     <Icon as={HiShoppingBag} mr='1' w='4' h='4' />
                     Cart                    
@@ -64,7 +64,7 @@ const Header = () => {
                 <Link
 					as={RouterLink}
                     to="/login"
-                    fontsize='sm'
+                    fontSize='sm'
                     letterSpacing='wide'
                     color='whiteAlpha.600'
                     fontWeight='bold'
