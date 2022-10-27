@@ -29,7 +29,7 @@ const Header = () => {
                     <Link
 						as={RouterLink}
                         to="/"
-                        _hover={{ color:'gray.500', textDecoration: 'bold'}}
+                        _hover={{ color:'gray.500', textDecoration: 'none'}}
                         >
                         ClothCart!
                     </Link>
